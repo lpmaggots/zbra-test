@@ -1,0 +1,24 @@
+@import '../settings/colors';
+@import '../settings/spacing';
+@import '../settings/variables';
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: $space-lg;
+  background-color: $color-bg-primary;
+  border: 1px solid $color-border-default;
+  border-radius: 4px;
+}
+
+.form-title {
+  font-size: $font-size-large;
+  margin-bottom: $space-md;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+}

@@ -1,0 +1,20 @@
+@import '../settings/colors';
+@import '../settings/spacing';
+@import '../settings/variables';
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  padding: $space-sm;
+  font-size: $font-size-base;
+  border: 1px solid $color-border-default;
+  border-radius: 4px;
+
+  &:disabled {
+    background-color: $color-bg-secondary;
+    border-color: $color-border-disabled;
+  }
+}

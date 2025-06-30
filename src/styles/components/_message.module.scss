@@ -1,0 +1,26 @@
+@import '../settings/colors';
+@import '../settings/spacing';
+@import '../settings/variables';
+
+.message {
+  font-size: $font-size-small;
+  font-weight: bold;
+  margin-top: $space-xs;
+}
+
+.message--success {
+  color: $color-text-success;
+}
+
+.message--error {
+  color: $color-text-error;
+
+  ul {
+    padding-left: $space-sm;
+    margin-top: $space-xs;
+  }
+
+  li {
+    margin-bottom: $space-xs;
+  }
+}
