@@ -49,9 +49,9 @@ export const Form = () => {
 
 
   const handleSubmit = async () => {
-  if (status === 'sending') return
-
-  const validationErrors = validate(form.password)
+    if (status === 'sending') return
+    
+    const validationErrors = validate(form.password)
     if(!form.name.trim() || !emailRegex.test(form.email) || validationErrors.length > 0) {
       const errorsToSet = validationErrors
       if (!form.name.trim()) errorsToSet.push('Name is required')
