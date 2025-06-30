@@ -1,6 +1,6 @@
-@import '../settings/colors';
-@import '../settings/spacing';
-@import '../settings/variables';
+@use '../settings/colors' as *;
+@use '../settings/spacing' as *;
+@use '../settings/variables' as *;
 
 .message {
   font-size: $font-size-small;
