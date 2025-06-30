@@ -1,8 +1,8 @@
-@use './spacing-utils';
+@use '../settings/colors' as *;
+@use '../settings/spacing' as *;
+@use '../settings/variables' as *;
 
-@import '../settings/colors';
-@import '../settings/spacing';
-@import '../settings/variables';
+@use './spacing-utils';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 

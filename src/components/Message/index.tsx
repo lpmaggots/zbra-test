@@ -13,6 +13,9 @@ type MessageProps = {
 export const Message = ({ type, message }: MessageProps) => {
   return (
     <div className={`${styles.message} ${styles[`message--${type}`]}`}>
+      {type === 'error' && (
+        <span className={`${styles[`message--${type}`]} mb-xs`}>Senha inválida</span>
+      )}
       {Array.isArray(message) ? (
         <ul>
           {message.map((msg, idx) => (
