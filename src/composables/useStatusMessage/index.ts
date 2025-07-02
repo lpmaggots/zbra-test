@@ -1,5 +1,5 @@
 // components
-import { MessageType } from '<@>/components/Message/'
+import { MessageType } from '<@>/components/Message'
 // types
 import { Status } from '<@>/types/status.types'
 

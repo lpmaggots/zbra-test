@@ -1,9 +1,9 @@
 'use client'
 import React, { useState } from 'react'
 // components
-import { Input } from '../Input/'
-import { Button } from '../Button/'
-import { Message } from '../Message/'
+import { Input } from '../../shared/Input'
+import { Button } from '../../shared/Button'
+import { Message } from '../Message'
 // types
 import { FormData } from '<@>/types/form.types'
 import { Status } from '<@>/types/status.types'
@@ -15,7 +15,7 @@ import styles from '<@>/styles/components/_form.module.scss'
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL as string
 
-export const Form = () => {
+export const RegisterForm = () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   const { validate } = usePasswordValidation()
 
@@ -130,4 +130,4 @@ export const Form = () => {
   )
 }
 
-export default Form
+export default RegisterForm

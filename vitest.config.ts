@@ -5,13 +5,25 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    setupFiles: './vitest.setup.ts',
+    setupFiles: './config/vitest.setup.ts',
     include: ['**/*.{test,spec}.{ts,tsx}'],
     css: false,
+    coverage: {
+      exclude: [
+        'node_modules',
+        'app/**',
+        '.next/**'
+      ],
+    },
+    exclude: [
+      'node_modules',
+      '.next/**'
+    ]
   },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      '<@>': path.resolve(__dirname, 'src'),
     },
   },
 })
